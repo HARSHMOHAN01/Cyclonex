@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "error": "#ba1a1a",
+        "inverse-on-surface": "#eaf1ff",
+        "primary-fixed": "#dae2fd",
+        "surface-container-lowest": "#ffffff",
+        "surface-bright": "#f8f9ff",
+        "error-container": "#ffdad6",
+        "outline-variant": "#c6c6cd",
+        "on-secondary-container": "#00476e",
+        "primary": "#000000",
+        "secondary-container": "#5bb8fe",
+        "tertiary-fixed": "#dbe1ff",
+        "on-primary": "#ffffff",
+        "surface": "#f8f9ff",
+        "primary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#131b2e",
+        "secondary-fixed": "#cce5ff",
+        "on-error": "#ffffff",
+        "on-primary-fixed-variant": "#3f465c",
+        "on-surface": "#0b1c30",
+        "surface-container": "#e5eeff",
+        "surface-dim": "#cbdbf5",
+        "on-secondary-fixed": "#001d31",
+        "on-tertiary-fixed": "#00174b",
+        "on-error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#003ea8",
+        "on-secondary-fixed-variant": "#004b73",
+        "tertiary-container": "#00174b",
+        "on-tertiary-container": "#497cff",
+        "primary-container": "#131b2e",
+        "surface-container-low": "#eff4ff",
+        "on-surface-variant": "#45464d",
+        "tertiary": "#000000",
+        "inverse-surface": "#213145",
+        "inverse-primary": "#bec6e0",
+        "surface-container-highest": "#d3e4fe",
+        "secondary-fixed-dim": "#93ccff",
+        "surface-container-high": "#dce9ff",
+        "secondary": "#006398",
+        "surface-tint": "#565e74",
+        "tertiary-fixed-dim": "#b4c5ff",
+        "background": "#f8f9ff",
+        "outline": "#76777d",
+        "on-background": "#0b1c30",
+        "on-primary-container": "#7c839b",
+        "on-secondary": "#ffffff",
+        "surface-variant": "#d3e4fe",
+        "on-tertiary": "#ffffff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-lg": "1.5rem",
+        "margin-tablet": "1.5rem",
+        "margin": "1rem",
+        "space-xs": "0.25rem",
+        "space-md": "1rem",
+        "space-xl": "2rem",
+        "margin-desktop": "2rem",
+        "gutter-desktop": "1.5rem",
+        "gutter": "1rem",
+        "space-sm": "0.5rem"
+      },
+      "fontFamily": {
+        "label-data-lg": ["JetBrains Mono"],
+        "headline-lg": ["Inter"],
+        "body-md": ["Inter"],
+        "body-sm": ["Inter"],
+        "caption": ["Inter"],
+        "headline-md": ["Inter"],
+        "display-hero-mobile": ["Inter"],
+        "label-data-sm": ["JetBrains Mono"],
+        "headline-lg-mobile": ["Inter"],
+        "headline-sm": ["Inter"],
+        "display-hero": ["Inter"],
+        "body-lg": ["Inter"]
+      },
+      "fontSize": {
+        "label-data-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "caption": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500"}],
+        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "display-hero-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "label-data-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "headline-sm": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "display-hero": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface text-on-surface antialiased font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 flex items-center px-space-md gap-space-sm"><img alt="CYCLONEX Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbb8tc83MBVt0a_bB1v_ToMTOd4lxiweA7ScKfVINDfaO0ujArEpCTSPocuaQ2BRR9iShdFT5uQBTEraST9cgX8k7uAnZOBMyLQbeAwUAvyO77jOBFgEoC8HIFVsnzB3fO6grfbQA_8yBNXOmOw1NIPVAiNryBeH_boPuWWJjqDiye6u_WQFTodHway6Vt04SIsDfsYNoHNo8n1DRpSSlAIgDvMUn5N2TUG4isAU77iS7AGkhkcxhvREGv"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">CYCLONEX</span><span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Cyclone Intelligence</span></div></div><div class="flex-1 px-space-xs py-space-xs overflow-y-auto"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-secondary font-semibold border-l-2 border-secondary"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="monitor" href="#"><span class="material-symbols-outlined text-[20px]">radar</span><span class="font-body-md text-body-md">Monitor</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-semibold border-l-2 border-secondary shadow-[inset_0_0_0_1px_rgba(0,99,152,0.08)]" data-path="cyclone-analysis" href="#"><span class="material-symbols-outlined text-[20px] text-secondary">cyclone</span><span class="font-body-md text-body-md">Cyclone Analysis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="forecast" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span class="font-body-md text-body-md">Forecast</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="satellite" href="#"><span class="material-symbols-outlined text-[20px]">satellite_alt</span><span class="font-body-md text-body-md">Satellite</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports</span></a></nav><div class="my-space-sm h-px bg-surface-container-high mx-space-sm"></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-secondary font-semibold border-l-2 border-secondary"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="system-status" href="#"><span class="material-symbols-outlined text-[20px]">dns</span><span class="font-body-md text-body-md">System Status</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-low/50 m-space-sm rounded-xl"><div class="flex items-center gap-space-sm"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-caption text-caption text-on-surface font-semibold tracking-wide uppercase">System Operational</span></div><div class="font-label-data-sm text-label-data-sm text-on-surface-variant mt-space-xs">SIH-2026 #26070</div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><img alt="CYCLONEX Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbb8tc83MBVt0a_bB1v_ToMTOd4lxiweA7ScKfVINDfaO0ujArEpCTSPocuaQ2BRR9iShdFT5uQBTEraST9cgX8k7uAnZOBMyLQbeAwUAvyO77jOBFgEoC8HIFVsnzB3fO6grfbQA_8yBNXOmOw1NIPVAiNryBeH_boPuWWJjqDiye6u_WQFTodHway6Vt04SIsDfsYNoHNo8n1DRpSSlAIgDvMUn5N2TUG4isAU77iS7AGkhkcxhvREGv"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Tropical Cyclone Intelligence</span><span class="font-caption text-caption text-on-surface-variant">Atmospheric Sensor Telemetry &amp; Ensemble Track Extrapolation</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-lg"><span class="h-2 w-2 rounded-full bg-secondary"></span><span class="font-caption text-caption font-semibold text-secondary uppercase tracking-wider">System Operational</span></div><div class="hidden sm:flex items-center px-space-sm py-space-xs bg-surface-container-low rounded-lg font-label-data-sm text-label-data-sm text-on-surface-variant tracking-normal">UTC 14:32:00</div><div class="px-space-sm py-space-xs bg-secondary-fixed text-on-secondary-fixed rounded-lg font-label-data-sm text-label-data-sm font-semibold tracking-wider uppercase">SIMULATED DATA</div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="h-11 px-space-lg flex items-center bg-surface-container-lowest/80 border-t border-surface-container-high"><nav class="flex items-center gap-space-lg h-full" data-active-classes="border-b-2 border-secondary text-secondary font-semibold"><a aria-current="page" class="inline-flex items-center h-full px-space-xs transition-colors border-b-2 border-secondary text-secondary font-semibold" data-path="cyclone-analysis-overview" href="#">Overview</a><a class="inline-flex items-center h-full text-on-surface-variant hover:text-on-surface border-b-2 border-transparent text-body-sm font-body-sm px-space-xs transition-colors" data-path="cyclone-analysis-satellite" href="#">Satellite</a><a class="inline-flex items-center h-full text-on-surface-variant hover:text-on-surface border-b-2 border-transparent text-body-sm font-body-sm px-space-xs transition-colors" data-path="cyclone-analysis-ai-analysis" href="#">AI Analysis</a><a class="inline-flex items-center h-full text-on-surface-variant hover:text-on-surface border-b-2 border-transparent text-body-sm font-body-sm px-space-xs transition-colors" data-path="cyclone-analysis-history" href="#">History</a></nav></div></header><main class="relative pt-[108px] w-full bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- CONTEXT HEADER -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Cyclone Vajra</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption font-semibold uppercase tracking-wider">
+          Severe Cyclonic Storm (SCS)
+        </span>
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-low text-secondary font-label-data-sm text-label-data-sm font-semibold">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+          Active
+        </div>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-label-data-sm text-label-data-sm text-secondary font-medium">North Indian Ocean // Bay of Bengal (BOB-03)</span>
+<span class="text-outline-variant">•</span>
+<span>INSAT-3DR Telemetry Synced</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-data-sm text-label-data-sm">Last Analysis: 14:15 UTC</span>
+</div>
+</div>
+<!-- Quick Actions / Mode Indicator -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm font-medium hover:bg-surface-container transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span>Sensor Layer</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold shadow-sm hover:opacity-90 transition-opacity flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Export Bulletin</span>
+</button>
+</div>
+</div>
+<!-- MAIN TWO-COLUMN HERO LAYOUT -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN: Satellite Observation (7 Cols on desktop) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Card Bar -->
+<div class="px-space-md py-space-sm flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">satellite_alt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Multispectral Satellite Observation</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-data-sm text-label-data-sm font-medium">
+          14:00 UTC (T-15m)
+        </span>
+</div>
+<!-- Satellite View Container with Floating Badge -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-highest flex items-center justify-center overflow-hidden group">
+<img alt="NOAA INSAT-3D Multispectral VIS/IR Satellite imagery of Tropical Cyclone Vajra in Bay of Bengal" class="w-full h-full object-cover object-center transform group-hover:scale-[1.01] transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4KFE0G5rF37fURnnGRXSi2RVRwr8pTQzR7kQ8TbNHvQRIoaf-Pf2lEuO9VFmY7dklxpMme1iMcjfwEhPXFLiEgHBvtEeMtj5FAsBhxrHZOFGRUqyVMATiyOYHysObPhettFU8mInZP-15XAksDzPsImixQFKi1IYbqqfuUydxYS_jeg_umV1dEvrRcaaFEaQ9WpLNUFhaldJFtc2QOBESlMYCFCl-8RF32UU7IYP0xSBea0zASiEP-A"/>
+<!-- Floating Pill Indicator -->
+<div class="absolute top-space-md left-space-md flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">layers</span>
+<span class="font-label-data-sm text-label-data-sm font-semibold tracking-tight">INSAT-3DR / Enhanced IR Composite</span>
+</div>
+<!-- Coordinates Floating Grid Corner -->
+<div class="absolute bottom-space-md right-space-md px-space-sm py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-data-sm text-label-data-sm text-on-surface-variant font-mono">
+          FOV: 08.0°N–21.0°N / 82.0°E–94.0°E
+        </div>
+</div>
+<!-- Telemetry Meta Strip below Viewport -->
+<div class="px-space-md py-space-sm bg-surface-container-low/70 flex flex-wrap items-center justify-between gap-space-xs font-label-data-sm text-label-data-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="font-semibold text-on-surface">Scale:</span>
+<span>1:3,500,000</span>
+</div>
+<div class="hidden sm:inline-block text-outline-variant">•</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-semibold text-on-surface">Central CDO Diameter:</span>
+<span>180 km</span>
+</div>
+<div class="hidden sm:inline-block text-outline-variant">•</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-semibold text-on-surface">Eye Structure:</span>
+<span class="text-secondary font-semibold">Developing (Ragged)</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Current Cyclone Summary & AI Classification (5 Cols on desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Current Cyclone Summary Tile -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-widest font-bold">Synoptic Telemetry</span>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-semibold">Sensor Cluster β-12</span>
+</div>
+<div class="grid grid-cols-2 gap-space-lg">
+<!-- Metric 1: Location -->
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-medium">Position</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface font-bold mt-1">14.6° N, 84.8° E</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">~340 km ESE of Visakhapatnam</span>
+</div>
+<!-- Metric 2: Wind Speed -->
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-medium">Sustained Wind</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">110</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">km/h</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Gusts up to 130 km/h</span>
+</div>
+<!-- Metric 3: Movement -->
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-medium">Translation Drift</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[18px] text-secondary rotate-[-45deg]">north</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">NW @ 14 km/h</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Azimuth Bearing 310°</span>
+</div>
+<!-- Metric 4: AI Ensemble Confidence -->
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-medium">Ensemble Agreement</span>
+<div class="flex items-baseline gap-1.5 mt-1">
+<span class="font-headline-md text-headline-md text-secondary font-bold">91%</span>
+<span class="font-caption text-caption text-secondary font-semibold uppercase">High Confidence</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ECMWF / GFS / UKMET synched</span>
+</div>
+</div>
+</div>
+<div class="h-px bg-surface-container-high my-space-md"></div>
+<!-- Central Pressure & Radii Pill Row -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg font-label-data-sm text-label-data-sm">
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant">Central Pressure:</span>
+<span class="font-bold text-on-surface">982 hPa (-6 hPa/6h)</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+<span class="font-semibold">Deepening</span>
+</div>
+</div>
+</div>
+<!-- AI Classification Container -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">psychology</span>
+<span class="font-caption text-caption uppercase tracking-wider font-bold text-on-surface">Automated AI Assessment</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-data-sm text-label-data-sm font-semibold">
+              91% Confidence
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+              Severe Cyclonic Storm (SCS)
+            </span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant font-mono">
+              Model: Multi-Scale Dvorak CNN • Latent Feature Depth: 48
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Deep convective curved band pattern wrapping 0.85 turns with developing central dense overcast (CDO). Cloud-top temperatures averaging -78°C around inner eyewall perimeter.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<a class="inline-flex items-center gap-2 px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold shadow-sm hover:bg-on-surface-variant transition-colors" data-path="cyclone-analysis-ai-analysis" href="#">
+<span>View AI Explanation</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-caption text-caption text-on-surface-variant">Validated with INSAT-3DR IR1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM SECTION: Two Complementary Visual Panels -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- LEFT PANEL: Intensity Trend Line Chart -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Intensity Trend</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Past 24h &amp; Projected 12h Sustained Wind Speed (km/h)
+          </p>
+</div>
+<div class="flex items-center gap-space-sm font-label-data-sm text-label-data-sm">
+<span class="flex items-center gap-1.5">
+<span class="h-2.5 w-2.5 rounded-full bg-secondary"></span> Observed
+          </span>
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="h-2.5 w-2.5 rounded-full bg-outline-variant"></span> Projected
+          </span>
+</div>
+</div>
+<!-- SVG Intensity Chart -->
+<div class="relative w-full h-56 pt-2 pb-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 540 180">
+<defs>
+<lineargradient id="trendGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#006398" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#006398" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Gridlines and Labels -->
+<!-- 160 km/h -->
+<line stroke="#e5eeff" stroke-dasharray="3,3" stroke-width="1" x1="45" x2="520" y1="20" y2="20"></line>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="end" x="35" y="24">160</text>
+<!-- 120 km/h -->
+<line stroke="#e5eeff" stroke-dasharray="3,3" stroke-width="1" x1="45" x2="520" y1="65" y2="65"></line>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="end" x="35" y="69">120</text>
+<!-- SCS Threshold at 89 km/h (y = ~100) -->
+<line stroke="#ffdad6" stroke-dasharray="4,4" stroke-width="1.5" x1="45" x2="520" y1="100" y2="100"></line>
+<text class="font-mono text-[9px] fill-current text-error font-semibold" text-anchor="end" x="515" y="94">SCS Threshold (89 km/h)</text>
+<!-- 80 km/h -->
+<line stroke="#e5eeff" stroke-dasharray="3,3" stroke-width="1" x1="45" x2="520" y1="110" y2="110"></line>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="end" x="35" y="114">80</text>
+<!-- 40 km/h -->
+<line stroke="#e5eeff" stroke-width="1" x1="45" x2="520" y1="155" y2="155"></line>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="end" x="35" y="159">40</text>
+<!-- Area Under Curve (00:00 to 14:00 NOW) -->
+<!-- Points: 
+               00:00 (65km/h) -> X:70, Y:127
+               04:00 (75km/h) -> X:140, Y:116
+               08:00 (90km/h) -> X:210, Y:99
+               12:00 (100km/h) -> X:280, Y:88
+               14:00 NOW (110km/h) -> X:340, Y:76
+          -->
+<polygon fill="url(#trendGradient)" points="70,127 140,116 210,99 280,88 340,76 340,155 70,155"></polygon>
+<!-- Solid Historic Trendline -->
+<polyline fill="none" points="70,127 140,116 210,99 280,88 340,76" stroke="#006398" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<!-- Projected Trendline (14:00 to 22:00) -->
+<!-- 18:00 (120km/h) -> X:420, Y:65
+               22:00 (130km/h) -> X:490, Y:54 -->
+<polyline fill="none" points="340,76 420,65 490,54" stroke="#006398" stroke-dasharray="4,4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+<!-- Historical Nodes -->
+<circle class="fill-surface-container-lowest" cx="70" cy="127" r="3.5" stroke="#006398" stroke-width="2"></circle>
+<circle class="fill-surface-container-lowest" cx="140" cy="116" r="3.5" stroke="#006398" stroke-width="2"></circle>
+<circle class="fill-surface-container-lowest" cx="210" cy="99" r="3.5" stroke="#006398" stroke-width="2"></circle>
+<circle class="fill-surface-container-lowest" cx="280" cy="88" r="3.5" stroke="#006398" stroke-width="2"></circle>
+<!-- Projected Nodes -->
+<circle class="fill-surface-container-lowest" cx="420" cy="65" r="3" stroke="#76777d" stroke-width="1.5"></circle>
+<circle class="fill-surface-container-lowest" cx="490" cy="54" r="3" stroke="#76777d" stroke-width="1.5"></circle>
+<!-- Active NOW Beacon Node (14:00 / 110 km/h) -->
+<circle class="animate-ping" cx="340" cy="76" fill="#006398" fill-opacity="0.25" r="7"></circle>
+<circle cx="340" cy="76" fill="#006398" r="4.5"></circle>
+<circle cx="340" cy="76" fill="#ffffff" r="2"></circle>
+<!-- Tag on NOW Point -->
+<rect fill="#131b2e" height="20" rx="3" width="50" x="315" y="46"></rect>
+<text class="font-mono text-[10px] fill-surface font-bold" text-anchor="middle" x="340" y="60">110 km/h</text>
+<!-- X-Axis Labels -->
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="middle" x="70" y="174">00:00</text>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="middle" x="140" y="174">04:00</text>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="middle" x="210" y="174">08:00</text>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="middle" x="280" y="174">12:00</text>
+<text class="font-mono text-[10px] fill-current text-secondary font-bold" text-anchor="middle" x="340" y="174">14:00 NOW</text>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="middle" x="420" y="174">18:00</text>
+<text class="font-mono text-[10px] fill-current text-outline" text-anchor="middle" x="490" y="174">22:00</text>
+</svg>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>IMD Dvorak T-Number: T3.5 (+0.5 / 12h)</span>
+<span class="font-label-data-sm text-label-data-sm font-semibold text-secondary">Rapid Intensification Index: 38% (Moderate)</span>
+</div>
+</div>
+<!-- RIGHT PANEL: Historical & Observed Track Map -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Historical &amp; Observed Track</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Past 48h trajectory extrapolation across Bay of Bengal
+          </p>
+</div>
+<!-- Map Controls -->
+<div class="flex items-center gap-1 bg-surface-container-low rounded-lg p-1">
+<button aria-label="Zoom in" class="w-7 h-7 flex items-center justify-center rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<button aria-label="Zoom out" class="w-7 h-7 flex items-center justify-center rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<button aria-label="Recenter" class="w-7 h-7 flex items-center justify-center rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">my_location</span>
+</button>
+</div>
+</div>
+<!-- Clean Map / Schematic Canvas -->
+<div class="relative w-full h-56 rounded-lg bg-surface-container overflow-hidden">
+<!-- Minimal Light GIS Vector Backdrop Representation -->
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 500 220">
+<!-- Subtle Sea Background -->
+<rect fill="#e5eeff" height="220" width="500"></rect>
+<!-- Simplified East Coast India & Myanmar Coastline Geometry -->
+<path d="M 0,0 L 160,0 Q 140,40 120,70 T 90,140 Q 70,180 50,220 L 0,220 Z" fill="#eff4ff" stroke="#dce9ff" stroke-width="1.5"></path>
+<path d="M 420,0 Q 400,60 410,130 Q 425,180 460,220 L 500,220 L 500,0 Z" fill="#eff4ff" stroke="#dce9ff" stroke-width="1.5"></path>
+<!-- Sri Lanka hint -->
+<ellipse cx="60" cy="195" fill="#eff4ff" rx="14" ry="20" stroke="#dce9ff" stroke-width="1.5"></ellipse>
+<!-- Coastline Labels -->
+<text class="font-sans text-[10px] fill-current text-outline font-semibold tracking-wide" x="135" y="35">ODISHA</text>
+<text class="font-sans text-[10px] fill-current text-outline font-semibold tracking-wide" x="95" y="105">ANDHRA PRADESH</text>
+<text class="font-sans text-[9px] fill-current text-outline font-semibold tracking-wide" x="45" y="170">TAMIL NADU</text>
+<text class="font-sans text-[12px] fill-current text-on-secondary-container opacity-40 font-bold tracking-widest" x="240" y="125">BAY OF BENGAL</text>
+<!-- Latitude / Longitude Subtle Ticks -->
+<line stroke="#dce9ff" stroke-dasharray="2,4" stroke-width="1" x1="200" x2="200" y1="0" y2="220"></line>
+<line stroke="#dce9ff" stroke-dasharray="2,4" stroke-width="1" x1="340" x2="340" y1="0" y2="220"></line>
+<line stroke="#dce9ff" stroke-dasharray="2,4" stroke-width="1" x1="0" x2="500" y1="110" y2="110"></line>
+<text class="font-mono text-[9px] fill-outline-variant" x="204" y="212">84°E</text>
+<text class="font-mono text-[9px] fill-outline-variant" x="344" y="212">88°E</text>
+<text class="font-mono text-[9px] fill-outline-variant" x="10" y="106">14°N</text>
+<!-- 48h Historical Track Line (From SE to NW) -->
+<!-- T-36h: (330, 180), T-24h: (290, 150), T-12h: (250, 120), T-0 NOW: (220, 95) -->
+<polyline fill="none" points="330,180 290,150 250,120 220,95" stroke="#006398" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></polyline>
+<!-- 12h Forecast Projection Cone & Line -->
+<!-- Forecast cone polygon -->
+<polygon fill="#5bb8fe" fill-opacity="0.18" points="220,95 180,55 150,75"></polygon>
+<polyline fill="none" points="220,95 168,64" stroke="#006398" stroke-dasharray="5,4" stroke-linecap="round" stroke-width="2.5"></polyline>
+<!-- Track Points -->
+<!-- T-36h -->
+<circle cx="330" cy="180" fill="#ffffff" r="4" stroke="#006398" stroke-width="2"></circle>
+<text class="font-mono text-[9px] fill-current text-on-surface-variant" x="340" y="184">T-36h (Depr.)</text>
+<!-- T-24h -->
+<circle cx="290" cy="150" fill="#ffffff" r="4.5" stroke="#006398" stroke-width="2"></circle>
+<text class="font-mono text-[9px] fill-current text-on-surface-variant" x="300" y="154">T-24h (CS)</text>
+<!-- T-12h -->
+<circle cx="250" cy="120" fill="#ffffff" r="5" stroke="#006398" stroke-width="2"></circle>
+<text class="font-mono text-[9px] fill-current text-on-surface-variant" x="260" y="124">T-12h</text>
+<!-- Projected Point (+12h) -->
+<circle cx="168" cy="64" fill="#e5eeff" r="5" stroke="#006398" stroke-dasharray="2,2" stroke-width="2"></circle>
+<text class="font-mono text-[9px] fill-current text-secondary font-bold" x="125" y="58">+12h Projected</text>
+<!-- T-0 NOW Beacon -->
+<circle class="animate-ping" cx="220" cy="95" fill="#006398" fill-opacity="0.2" r="10"></circle>
+<circle cx="220" cy="95" fill="#006398" r="6"></circle>
+<circle cx="220" cy="95" fill="#ffffff" r="2.5"></circle>
+<text class="font-mono text-[10px] fill-current text-primary font-bold" x="228" y="92">14.6°N, 84.8°E (NOW)</text>
+</svg>
+<!-- Floating Quick Map Legend -->
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-space-sm py-1 rounded shadow-xs flex items-center gap-space-md font-label-data-sm text-label-data-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-secondary"></span>
+<span class="text-on-surface-variant">Historical Track</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 border-b-2 border-secondary border-dashed"></span>
+<span class="text-on-surface-variant">Projected Cone (+12h)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Projected Landfall Window: 16 May 02:00–06:00 UTC</span>
+<span class="font-medium text-on-surface">Target Zone: North Andhra Pradesh / South Odisha</span>
+</div>
+</div>
+</div>
+<!-- CLINICAL SYSTEM FOOTER -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm py-space-sm px-space-md bg-surface-container-lowest rounded-lg text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-data-sm text-label-data-sm uppercase tracking-wider font-semibold">
+        SIMULATED DATA FOR SIH 2026 EVALUATION
+      </span>
+<span>• WMO / IMD Standard Baseline Telemetry Mesh</span>
+</div>
+<div class="flex items-center gap-space-md font-mono text-label-data-sm">
+<span>Model v4.8.2 Live</span>
+<span>Station Latency: 42ms</span>
+</div>
+</div>
+</div></main></div></body></html>

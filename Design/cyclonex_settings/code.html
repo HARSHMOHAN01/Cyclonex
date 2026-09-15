@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006398", "on-tertiary-fixed-variant": "#003ea8", "on-surface-variant": "#45464d", "primary": "#000000", "outline-variant": "#c6c6cd", "inverse-primary": "#bec6e0", "secondary-container": "#5bb8fe", "secondary-fixed-dim": "#93ccff", "tertiary-fixed": "#dbe1ff", "primary-fixed-dim": "#bec6e0", "tertiary-fixed-dim": "#b4c5ff", "surface-tint": "#565e74", "tertiary": "#000000", "on-surface": "#0b1c30", "on-background": "#0b1c30", "secondary-fixed": "#cce5ff", "on-primary-fixed": "#131b2e", "surface-container-low": "#eff4ff", "on-tertiary-fixed": "#00174b", "tertiary-container": "#00174b", "surface-dim": "#cbdbf5", "background": "#f8f9ff", "inverse-surface": "#213145", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "surface-variant": "#d3e4fe", "on-primary-container": "#7c839b", "surface": "#f8f9ff", "on-secondary-container": "#00476e", "on-primary-fixed-variant": "#3f465c", "on-error": "#ffffff", "on-primary": "#ffffff", "surface-container": "#e5eeff", "primary-container": "#131b2e", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "inverse-on-surface": "#eaf1ff", "error-container": "#ffdad6", "primary-fixed": "#dae2fd", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "error": "#ba1a1a", "outline": "#76777d", "on-secondary-fixed-variant": "#004b73", "surface-bright": "#f8f9ff", "on-tertiary-container": "#497cff", "on-secondary-fixed": "#001d31" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2rem", "gutter": "1rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, "fontFamily": { "display-hero-mobile": [ "Inter" ], "body-md": [ "Inter" ], "body-sm": [ "Inter" ], "label-data-sm": [ "JetBrains Mono" ], "headline-lg": [ "Inter" ], "headline-md": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "display-hero": [ "Inter" ], "label-data-lg": [ "JetBrains Mono" ], "headline-sm": [ "Inter" ], "caption": [ "Inter" ] }, "fontSize": { "display-hero-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-data-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-hero": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "label-data-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #0f172a - Font: inter - Mode: light - Roundness: rounded-sm" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbb8tc83MBVt0a_bB1v_ToMTOd4lxiweA7ScKfVINDfaO0ujArEpCTSPocuaQ2BRR9iShdFT5uQBTEraST9cgX8k7uAnZOBMyLQbeAwUAvyO77jOBFgEoC8HIFVsnzB3fO6grfbQA_8yBNXOmOw1NIPVAiNryBeH_boPuWWJjqDiye6u_WQFTodHway6Vt04SIsDfsYNoHNo8n1DRpSSlAIgDvMUn5N2TUG4isAU77iS7AGkhkcxhvREGv"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none">CYCLONEX</span><span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider mt-space-xs">Cyclone Intelligence</span></div></div><nav class="flex flex-col gap-space-xs px-space-sm mt-space-md" data-active-classes="bg-surface-container-high text-secondary font-semibold rounded-xl shadow-[inset_3px_0_0_0_#006398]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="monitor" href="#"><span class="material-symbols-outlined text-[20px]">radar</span><span class="font-body-md text-body-md">Monitor</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="cyclone-analysis" href="#"><span class="material-symbols-outlined text-[20px]">filter_tilt_shift</span><span class="font-body-md text-body-md">Cyclone Analysis</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-surface-container-high text-secondary font-semibold rounded-xl shadow-[inset_3px_0_0_0_#006398]" data-path="forecast" href="#"><span class="material-symbols-outlined text-[20px]">timeline</span><span class="font-body-md text-body-md">Forecast</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="satellite" href="#"><span class="material-symbols-outlined text-[20px]">satellite_alt</span><span class="font-body-md text-body-md">Satellite</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports</span></a><div class="my-space-sm h-[1px] bg-surface-container-high mx-space-sm"></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="system-status" href="#"><span class="material-symbols-outlined text-[20px]">dns</span><span class="font-body-md text-body-md">System Status</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-md bg-surface-container-lowest flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-caption text-caption text-on-surface font-semibold">System Operational</span></div><span class="font-label-data-sm text-label-data-sm text-on-surface-variant uppercase">SIH 2026 #26070</span></div></aside><div class="pl-60 flex flex-col min-h-screen"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0f172a - Font: inter - Mode: light - Roundness: rounded-sm" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbb8tc83MBVt0a_bB1v_ToMTOd4lxiweA7ScKfVINDfaO0ujArEpCTSPocuaQ2BRR9iShdFT5uQBTEraST9cgX8k7uAnZOBMyLQbeAwUAvyO77jOBFgEoC8HIFVsnzB3fO6grfbQA_8yBNXOmOw1NIPVAiNryBeH_boPuWWJjqDiye6u_WQFTodHway6Vt04SIsDfsYNoHNo8n1DRpSSlAIgDvMUn5N2TUG4isAU77iS7AGkhkcxhvREGv"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Meteorological Command Station</span><span class="font-caption text-caption text-on-surface-variant">Atmospheric basin monitoring &amp; trajectory extrapolation</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-data-sm text-label-data-sm text-on-surface font-medium">ACTIVE BASIN</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">schedule</span><span class="font-label-data-sm text-label-data-sm text-on-surface-variant font-mono">UTC 14:32:00</span></div><div class="px-space-sm py-space-xs rounded-xl bg-error-container text-on-error-container font-label-data-sm text-label-data-sm font-semibold tracking-wider uppercase">SIMULATED DATA</div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<script>
+    (function () {
+      const activeNavClasses = 'bg-surface-container-high text-secondary font-semibold rounded-xl shadow-[inset_3px_0_0_0_#006398]';
+      const defaultNavClasses = 'text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface';
+      document.querySelectorAll('aside nav a').forEach((link) => {
+        if (link.getAttribute('data-path') === 'settings') {
+          link.className = 'flex items-center gap-space-sm px-space-md py-space-sm ' + activeNavClasses + ' transition-all';
+        } else {
+          link.className = 'flex items-center gap-space-sm px-space-md py-space-sm rounded-xl ' + defaultNavClasses + ' transition-all';
+        }
+      });
+    })();
+  </script>
+<div class="p-space-lg lg:p-space-xl flex flex-col gap-space-lg">
+<!-- Top Action Context Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-data-sm text-label-data-sm uppercase tracking-wider text-secondary font-semibold">Workspace Configuration</span>
+<span class="text-outline-variant font-label-data-sm text-label-data-sm">/</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant">Profile &amp; Node Preferences</span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-semibold">Settings</h1>
+<span class="hidden sm:inline-block font-body-sm text-body-sm text-on-surface-variant">Preferences, alert configurations, and system attribution</span>
+</div>
+</div>
+<div class="flex items-center flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-data-sm text-label-data-sm font-semibold text-secondary uppercase tracking-wider">PROFILE SYNCED</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-label-data-sm text-label-data-sm font-mono">UTC 14:32:00</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-high text-on-surface">
+<span class="font-label-data-sm text-label-data-sm font-semibold tracking-wider">APP CONFIG V2.4</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-primary text-on-primary shadow-sm hover:bg-on-surface transition-all active:scale-95" id="save-all-btn">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium">Save Changes</span>
+</button>
+</div>
+</div>
+<!-- Main Content Dual-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column / Operational Settings Deck (~65%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Section 1: General Workspace -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">General Preferences</h2>
+<p class="font-caption text-caption text-on-surface-variant">Synoptic operational mode and standardized measurement metrics</p>
+</div>
+</div>
+<span class="font-label-data-sm text-label-data-sm px-space-sm py-space-xs rounded-lg bg-surface-container-low text-secondary font-medium uppercase">IMD Synoptic Node</span>
+</div>
+<div class="flex flex-col gap-space-md pt-space-xs">
+<!-- Account / Node Mode -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Forecaster Authority Node</span>
+<span class="font-caption text-caption text-on-surface-variant">Operational Forecaster (IMD Synoptic Node #IN-4012)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-semibold">Node Active</span>
+</div>
+</div>
+<!-- Units of Measurement: Wind Speed -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Wind Speed Measurement</span>
+<span class="font-caption text-caption text-on-surface-variant">WMO-008 Guidance Standard</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs p-1 rounded-xl bg-surface-container-low">
+<button class="unit-wind-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all" data-value="kmh" type="button">
+                  km/h (IMD Standard)
+                </button>
+<button class="unit-wind-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" data-value="knots" type="button">
+                  knots (Nautical)
+                </button>
+<button class="unit-wind-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" data-value="ms" type="button">
+                  m/s (SI Unit)
+                </button>
+</div>
+</div>
+<!-- Units of Measurement: Pressure -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Central Atmospheric Pressure</span>
+<span class="font-caption text-caption text-on-surface-variant">Barometric telemetry precision</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs p-1 rounded-xl bg-surface-container-low">
+<button class="unit-press-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all" data-value="hpa" type="button">
+                  hPa (Selected)
+                </button>
+<button class="unit-press-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" data-value="mbar" type="button">
+                  mbar
+                </button>
+<button class="unit-press-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" data-value="inhg" type="button">
+                  inHg
+                </button>
+</div>
+</div>
+<!-- Timezone Standard -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs">
+<div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Timezone Standard &amp; Reference</span>
+<p class="font-caption text-caption text-on-surface-variant">All ensemble tracking matrices correlate with synoptic hour stamps</p>
+</div>
+<div class="px-space-md py-space-xs rounded-xl bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">public</span>
+<div class="flex flex-col">
+<span class="font-label-data-sm text-label-data-sm font-semibold text-on-surface">UTC (Universal Time)</span>
+<span class="font-caption text-caption text-on-surface-variant">IST Offset: +05:30 Synoptic Sync</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Map & GIS Preferences -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">map</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">GIS &amp; Basemap Overlays</h2>
+<p class="font-caption text-caption text-on-surface-variant">Dynamic ocean basin framing and default sensor rendering stacks</p>
+</div>
+</div>
+<span class="font-label-data-sm text-label-data-sm px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface font-semibold">INSAT-3DR Synced</span>
+</div>
+<!-- Basin Selectors -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Primary Synoptic Monitoring Basin</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="cursor-pointer flex items-center justify-between p-space-sm rounded-xl bg-secondary-fixed text-on-secondary-fixed transition-all">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="accent-secondary h-4 w-4" name="basin" type="radio"/>
+<span class="font-body-md text-body-md font-semibold">Bay of Bengal</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm uppercase">BOB</span>
+</label>
+<label class="cursor-pointer flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-xs">
+<input class="accent-secondary h-4 w-4" name="basin" type="radio"/>
+<span class="font-body-md text-body-md font-medium">Arabian Sea</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant uppercase">ARB</span>
+</label>
+<label class="cursor-pointer flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-xs">
+<input class="accent-secondary h-4 w-4" name="basin" type="radio"/>
+<span class="font-body-md text-body-md font-medium">North Indian Ocean</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant uppercase">NIO</span>
+</label>
+</div>
+</div>
+<!-- Default Map Layer Toggles -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Default Active Telemetry Layers</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">satellite_alt</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Multispectral Satellite Overlay</span>
+<span class="font-caption text-caption text-on-surface-variant">INSAT-3DR Thermal IR (TIR-1)</span>
+</div>
+</div>
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">timeline</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Ensemble Forecast Cone</span>
+<span class="font-caption text-caption text-on-surface-variant">70% Trajectory probability spread</span>
+</div>
+</div>
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">radar</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Gale Wind Radii Quadrants</span>
+<span class="font-caption text-caption text-on-surface-variant">R34 / R50 Nautical mile contours</span>
+</div>
+</div>
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">waves</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Coastal Bathymetry &amp; Inundation</span>
+<span class="font-caption text-caption text-on-surface-variant">High-tide surge penetration zones</span>
+</div>
+</div>
+<input class="accent-secondary h-4 w-4" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Basemap Style Selector -->
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Basemap Cartography Style</span>
+<p class="font-caption text-caption text-on-surface-variant">High-legibility monochrome projection optimized for cyclonic vorticity</p>
+</div>
+<div class="flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-low">
+<span class="px-space-sm py-space-xs rounded-lg font-label-data-sm text-label-data-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm">Light Meteorological</span>
+<span class="px-space-sm py-space-xs rounded-lg font-label-data-sm text-label-data-sm text-on-surface-variant hover:text-on-surface cursor-pointer">Marine Nautical Bathy</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Operational Notifications & Alerts -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Alert Rules &amp; Dissemination</h2>
+<p class="font-caption text-caption text-on-surface-variant">Automated early warning thresholds for coastal administrations</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="master-threat-alerts" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Severity Threshold Radios -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Severity Escalation Threshold</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="cursor-pointer flex flex-col gap-space-xs p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-xs">
+<input class="accent-secondary h-4 w-4" name="severity" type="radio"/>
+<span class="font-body-md text-body-md font-medium text-on-surface">All Depressions</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Low pressure systems ≥ 31 km/h</span>
+</label>
+<label class="cursor-pointer flex flex-col gap-space-xs p-space-sm rounded-xl bg-secondary-fixed text-on-secondary-fixed transition-all">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="accent-secondary h-4 w-4" name="severity" type="radio"/>
+<span class="font-body-md text-body-md font-semibold">Cyclonic Storms +</span>
+</div>
+<span class="font-caption text-caption text-on-secondary-fixed-variant">CS, SCS, VSCS, Super Cyclones</span>
+</label>
+<label class="cursor-pointer flex flex-col gap-space-xs p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-xs">
+<input class="accent-secondary h-4 w-4" name="severity" type="radio"/>
+<span class="font-body-md text-body-md font-medium text-on-surface">Landfall Imminent</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Red Alert only (&lt; 24h ETA)</span>
+</label>
+</div>
+</div>
+<!-- Notification Channels -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Downstream Dispatch Endpoints</span>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">desktop_windows</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">High-Priority Browser Push Alerts</span>
+<span class="font-caption text-caption text-on-surface-variant">Instant audio chime and visual banner when central pressure drops &gt; 5 hPa/3h</span>
+</div>
+</div>
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">webhook</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">IMD Synoptic Dissemination API Webhook</span>
+<span class="font-caption text-caption text-on-surface-variant">Automated JSON payload delivery to National Disaster Management Network</span>
+</div>
+</div>
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">mark_email_read</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Automated Email Digest to District Magistrates</span>
+<span class="font-caption text-caption text-on-surface-variant">Structured 3-hourly analytical synoptic bulletin dispatch</span>
+</div>
+</div>
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+</label>
+</div>
+</div>
+</section>
+<!-- Section 4: AI Prediction Engine Parameters -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Prediction &amp; Ensemble Models</h2>
+<p class="font-caption text-caption text-on-surface-variant">Forecast trajectory horizons and probabilistic cone calculations</p>
+</div>
+</div>
+<span class="font-label-data-sm text-label-data-sm px-space-sm py-space-xs rounded-lg bg-surface-container-low text-secondary font-medium uppercase">SIH-2026 Engine</span>
+</div>
+<div class="flex flex-col gap-space-md pt-space-xs">
+<!-- Horizon Selector -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Default Forecast Extrapolation Horizon</span>
+<div class="grid grid-cols-4 gap-space-xs p-1 rounded-xl bg-surface-container-low">
+<button class="horizon-btn py-space-xs rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" type="button">24h</button>
+<button class="horizon-btn py-space-xs rounded-lg text-center font-label-data-sm text-label-data-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all" type="button">48h (Default)</button>
+<button class="horizon-btn py-space-xs rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" type="button">72h</button>
+<button class="horizon-btn py-space-xs rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" type="button">120h Extended</button>
+</div>
+</div>
+<!-- Model Consensus -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Ensemble Model Weighting</span>
+<span class="font-caption text-caption text-on-surface-variant">Multi-Model Consensus: ECMWF-IFS (45%) + GFS-FV3 (35%) + UKMET (20%)</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm px-space-sm py-space-xs rounded-lg bg-surface-container-highest text-on-surface font-semibold">Calibrated Optimum</span>
+</div>
+<!-- Uncertainty Cone Mode -->
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Uncertainty Envelope Display</span>
+<p class="font-caption text-caption text-on-surface-variant">Standard 70% Confidence Cone with Landfall Error Ellipses</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-label-data-sm text-label-data-sm font-semibold text-secondary">WMO Compliant</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column / Institutional & About Deck (~35%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Institutional Dossier Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-secondary/5 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Crest / Header Section -->
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[28px]">storm</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">CYCLONEX</span>
+<span class="font-label-data-sm text-label-data-sm px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-mono">v2.4</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">AI-Powered Cyclone Intelligence</span>
+</div>
+</div>
+<!-- Hackathon & Problem Statement Pill -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase font-semibold">Initiative</span>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-bold">SIH 2026</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase font-semibold">Problem ID</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-mono font-semibold">#26070</span>
+</div>
+</div>
+<!-- Institutional Guidance -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-semibold">Guidance &amp; Stakeholders</span>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-xs p-space-xs rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">account_balance</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Ministry of Earth Sciences (MoES)</span>
+<span class="font-caption text-caption text-on-surface-variant">Government of India</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs p-space-xs rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">cyclone</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">India Meteorological Department (IMD)</span>
+<span class="font-caption text-caption text-on-surface-variant">Regional Specialized Meteorological Centre (RSMC)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Deep AI Models Architecture Stack -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-semibold">Core AI Engines</span>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface text-body-sm font-body-sm py-1">
+<span class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> YOLOv8 Eye Localization</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant font-mono">0.96 IoU</span>
+</div>
+<div class="flex items-center justify-between text-on-surface text-body-sm font-body-sm py-1">
+<span class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Deep Dvorak CNN v4</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant font-mono">±3.8 kt</span>
+</div>
+<div class="flex items-center justify-between text-on-surface text-body-sm font-body-sm py-1">
+<span class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Physics-Informed Recurve</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant font-mono">PINN v2</span>
+</div>
+</div>
+</div>
+<!-- Integrity Benchmark Indicator -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">gavel</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">SIH Evaluation Metric</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-bold uppercase">Compliant</span>
+</div>
+<!-- Documentation Quick Links -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-semibold">Official Resources</span>
+<div class="flex flex-col gap-space-xs">
+<a class="flex items-center justify-between p-space-xs px-space-sm rounded-lg hover:bg-surface-container-low text-secondary font-body-sm text-body-sm transition-all" href="#">
+<span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">folder_open</span> SIH #26070 Dossier</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<a class="flex items-center justify-between p-space-xs px-space-sm rounded-lg hover:bg-surface-container-low text-secondary font-body-sm text-body-sm transition-all" href="#">
+<span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">menu_book</span> Synoptic Evaluation Guide</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<a class="flex items-center justify-between p-space-xs px-space-sm rounded-lg hover:bg-surface-container-low text-secondary font-body-sm text-body-sm transition-all" href="#">
+<span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">biotech</span> XAI Model Explainability Whitepaper</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Build Stamp -->
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant">
+<span class="font-label-data-sm text-label-data-sm font-mono">Build v2.4.8-synoptic</span>
+<span class="font-label-data-sm text-label-data-sm font-mono">May 2024 Release</span>
+</div>
+</div>
+<!-- Quick Actions & Session Reset Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Node Execution</h3>
+<p class="font-caption text-caption text-on-surface-variant">Synchronize active session modifications across peer stations</p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-xl bg-primary text-on-primary font-body-md text-body-md font-medium shadow-sm hover:bg-on-surface transition-all active:scale-[0.99]" id="save-preferences-btn">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Preferences</span>
+</button>
+<button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-body-md text-body-md font-medium transition-all" id="reset-defaults-btn">
+<span class="material-symbols-outlined text-[18px]">restore</span>
+<span>Reset to Institutional Defaults</span>
+</button>
+</div>
+<!-- Toast feedback area -->
+<div class="hidden items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-high text-on-surface animate-fade" id="status-toast">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="font-label-data-sm text-label-data-sm font-semibold">Preferences synchronized with IMD node.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Micro-interactions for Settings controls
+    document.querySelectorAll('.unit-wind-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.unit-wind-btn').forEach(btn => {
+          btn.className = 'unit-wind-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all';
+        });
+        button.className = 'unit-wind-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all';
+      });
+    });
+
+    document.querySelectorAll('.unit-press-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.unit-press-btn').forEach(btn => {
+          btn.className = 'unit-press-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all';
+        });
+        button.className = 'unit-press-btn py-space-xs px-space-sm rounded-lg text-center font-label-data-sm text-label-data-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all';
+      });
+    });
+
+    document.querySelectorAll('.horizon-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.horizon-btn').forEach(btn => {
+          btn.className = 'horizon-btn py-space-xs rounded-lg text-center font-label-data-sm text-label-data-sm font-medium text-on-surface-variant hover:text-on-surface transition-all';
+        });
+        button.className = 'horizon-btn py-space-xs rounded-lg text-center font-label-data-sm text-label-data-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all';
+      });
+    });
+
+    function showSaveFeedback() {
+      const toast = document.getElementById('status-toast');
+      if (toast) {
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 3500);
+      }
+    }
+
+    document.getElementById('save-preferences-btn')?.addEventListener('click', showSaveFeedback);
+    document.getElementById('save-all-btn')?.addEventListener('click', showSaveFeedback);
+  </script>
+</div></main></div></body></html>

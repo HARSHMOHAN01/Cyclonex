@@ -1,0 +1,101 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Cyclone {
+  id               String   @id @default(uuid())
+  internationalId  String?  @unique
+  name             String
+  basin            String
+  region           String
+  status           String   // e.g., "Active", "Dissipated"
+  category         Int
+  maxWind          Float
+  centralPressure  Float
+  latitude         Float
+  longitude        Float
+  movementDirection Float?
+  movementSpeed    Float?
+  timestamp        DateTime @default(now())
+  source           String
+  
+  observations     Observation[]
+  tracks           Track[]
+  forecasts        ForecastRun[]
+  reports          Report[]
+}
+
+model Observation {
+  id          String   @id @default(uuid())
+  cycloneId   String
+  cyclone     Cyclone  @relation(fields: [cycloneId], references: [id], onDelete: Cascade)
+  timestamp   DateTime
+  latitude    Float
+  longitude   Float
+  windSpeed   Float
+  pressure    Float
+  category    Int
+  source      String
+}
+
+model Track {
+  id          String   @id @default(uuid())
+  cycloneId   String
+  cyclone     Cyclone  @relation(fields: [cycloneId], references: [id], onDelete: Cascade)
+  timestamp   DateTime
+  latitude    Float
+  longitude   Float
+  windSpeed   Float
+  pressure    Float
+  category    Int
+  source      String
+}
+
+model ForecastRun {
+  id             String   @id @default(uuid())
+  cycloneId      String
+  cyclone        Cyclone  @relation(fields: [cycloneId], references: [id], onDelete: Cascade)
+  model          String   // e.g., "GFS", "ECMWF"
+  initializedAt  DateTime
+  points         ForecastPoint[]
+}
+
+model ForecastPoint {
+  id             String      @id @default(uuid())
+  forecastRunId  String
+  forecastRun    ForecastRun @relation(fields: [forecastRunId], references: [id], onDelete: Cascade)
+  forecastTime   DateTime
+  latitude       Float
+  longitude      Float
+  windSpeed      Float
+  pressure       Float
+  category       Int
+  confidence     Float?
+}
+
+model Report {
+  id          String   @id @default(uuid())
+  cycloneId   String
+  cyclone     Cyclone  @relation(fields: [cycloneId], references: [id], onDelete: Cascade)
+  title       String
+  content     String
+  author      String
+  severity    String
+  timestamp   DateTime @default(now())
+}
+
+model SystemEvent {
+  id          String   @id @default(uuid())
+  service     String
+  status      String
+  message     String?
+  timestamp   DateTime @default(now())
+}

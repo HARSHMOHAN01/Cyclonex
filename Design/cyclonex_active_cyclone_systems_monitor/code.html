@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006398", "on-tertiary-fixed-variant": "#003ea8", "on-surface-variant": "#45464d", "primary": "#000000", "outline-variant": "#c6c6cd", "inverse-primary": "#bec6e0", "secondary-container": "#5bb8fe", "secondary-fixed-dim": "#93ccff", "tertiary-fixed": "#dbe1ff", "primary-fixed-dim": "#bec6e0", "tertiary-fixed-dim": "#b4c5ff", "surface-tint": "#565e74", "tertiary": "#000000", "on-surface": "#0b1c30", "on-background": "#0b1c30", "secondary-fixed": "#cce5ff", "on-primary-fixed": "#131b2e", "surface-container-low": "#eff4ff", "on-tertiary-fixed": "#00174b", "tertiary-container": "#00174b", "surface-dim": "#cbdbf5", "background": "#f8f9ff", "inverse-surface": "#213145", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "surface-variant": "#d3e4fe", "on-primary-container": "#7c839b", "surface": "#f8f9ff", "on-secondary-container": "#00476e", "on-primary-fixed-variant": "#3f465c", "on-error": "#ffffff", "on-primary": "#ffffff", "surface-container": "#e5eeff", "primary-container": "#131b2e", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "inverse-on-surface": "#eaf1ff", "error-container": "#ffdad6", "primary-fixed": "#dae2fd", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "error": "#ba1a1a", "outline": "#76777d", "on-secondary-fixed-variant": "#004b73", "surface-bright": "#f8f9ff", "on-tertiary-container": "#497cff", "on-secondary-fixed": "#001d31" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2rem", "gutter": "1rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, "fontFamily": { "display-hero-mobile": [ "Inter" ], "body-md": [ "Inter" ], "body-sm": [ "Inter" ], "label-data-sm": [ "JetBrains Mono" ], "headline-lg": [ "Inter" ], "headline-md": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "display-hero": [ "Inter" ], "label-data-lg": [ "JetBrains Mono" ], "headline-sm": [ "Inter" ], "caption": [ "Inter" ] }, "fontSize": { "display-hero-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-data-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-hero": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "label-data-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #0f172a - Font: inter - Mode: light - Roundness: rounded-sm" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbb8tc83MBVt0a_bB1v_ToMTOd4lxiweA7ScKfVINDfaO0ujArEpCTSPocuaQ2BRR9iShdFT5uQBTEraST9cgX8k7uAnZOBMyLQbeAwUAvyO77jOBFgEoC8HIFVsnzB3fO6grfbQA_8yBNXOmOw1NIPVAiNryBeH_boPuWWJjqDiye6u_WQFTodHway6Vt04SIsDfsYNoHNo8n1DRpSSlAIgDvMUn5N2TUG4isAU77iS7AGkhkcxhvREGv"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none">CYCLONEX</span><span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider mt-space-xs">Cyclone Intelligence</span></div></div><nav class="flex flex-col gap-space-xs px-space-sm mt-space-md" data-active-classes="bg-surface-container-high text-secondary font-semibold rounded-xl shadow-[inset_3px_0_0_0_#006398]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Overview</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-surface-container-high text-secondary font-semibold rounded-xl shadow-[inset_3px_0_0_0_#006398]" data-path="monitor" href="#"><span class="material-symbols-outlined text-[20px]">radar</span><span class="font-body-md text-body-md">Monitor</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="cyclone-analysis" href="#"><span class="material-symbols-outlined text-[20px]">filter_tilt_shift</span><span class="font-body-md text-body-md">Cyclone Analysis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="forecast" href="#"><span class="material-symbols-outlined text-[20px]">timeline</span><span class="font-body-md text-body-md">Forecast</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="satellite" href="#"><span class="material-symbols-outlined text-[20px]">satellite_alt</span><span class="font-body-md text-body-md">Satellite</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports</span></a><div class="my-space-sm h-[1px] bg-surface-container-high mx-space-sm"></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="system-status" href="#"><span class="material-symbols-outlined text-[20px]">dns</span><span class="font-body-md text-body-md">System Status</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-md bg-surface-container-lowest flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-caption text-caption text-on-surface font-semibold">System Operational</span></div><span class="font-label-data-sm text-label-data-sm text-on-surface-variant uppercase">SIH 2026 #26070</span></div></aside><div class="pl-60 flex flex-col min-h-screen"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0f172a - Font: inter - Mode: light - Roundness: rounded-sm" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbb8tc83MBVt0a_bB1v_ToMTOd4lxiweA7ScKfVINDfaO0ujArEpCTSPocuaQ2BRR9iShdFT5uQBTEraST9cgX8k7uAnZOBMyLQbeAwUAvyO77jOBFgEoC8HIFVsnzB3fO6grfbQA_8yBNXOmOw1NIPVAiNryBeH_boPuWWJjqDiye6u_WQFTodHway6Vt04SIsDfsYNoHNo8n1DRpSSlAIgDvMUn5N2TUG4isAU77iS7AGkhkcxhvREGv"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Meteorological Command Station</span><span class="font-caption text-caption text-on-surface-variant">Atmospheric basin monitoring &amp; trajectory extrapolation</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-data-sm text-label-data-sm text-on-surface font-medium">ACTIVE BASIN</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">schedule</span><span class="font-label-data-sm text-label-data-sm text-on-surface-variant font-mono">UTC 14:32:00</span></div><div class="px-space-sm py-space-xs rounded-xl bg-error-container text-on-error-container font-label-data-sm text-label-data-sm font-semibold tracking-wider uppercase">SIMULATED DATA</div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Sub-Navigation Bar -->
+<div class="bg-surface-container-lowest px-space-lg py-space-sm flex flex-wrap items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<button class="relative px-space-md py-space-sm font-label-data-lg text-label-data-lg text-on-surface font-semibold flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">cyclone</span>
+<span>Active Systems</span>
+<span class="absolute bottom-0 left-0 right-0 h-[2px] bg-secondary"></span>
+</button>
+<button class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">public</span>
+<span>Live Map</span>
+</button>
+<button class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">reorder</span>
+<span>Timeline</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant uppercase tracking-wider hidden sm:inline">Telemetry Sync: Realtime</span>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface font-label-data-sm text-label-data-sm px-space-md py-space-xs rounded-lg shadow-sm flex items-center gap-space-xs transition-all active:scale-95" id="refresh-btn">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync</span>
+<span>Refresh Telemetry</span>
+</button>
+</div>
+</div>
+<!-- Main Content Body -->
+<div class="p-space-lg flex flex-col gap-space-lg">
+<!-- 1. Page Sub-Header Banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="font-caption text-caption text-secondary uppercase tracking-widest font-semibold">Phase 3 Surveillance Matrix</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant">North Indian Ocean Basin</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Active Cyclone Systems</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Real-time classification, kinetic motion vectors, and automated AI confidence metrics.</p>
+</div>
+<!-- Filter Pill Group -->
+<div class="flex items-center bg-surface-container-low p-space-xs rounded-xl shadow-inner self-start md:self-auto">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-secondary font-label-data-sm text-label-data-sm shadow-sm transition-all">
+          All Basins (2)
+        </button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-data-sm text-label-data-sm transition-all">
+          Bay of Bengal (1)
+        </button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-data-sm text-label-data-sm transition-all">
+          Arabian Sea (1)
+        </button>
+</div>
+</div>
+<!-- 2. Active Cyclone Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Card 1: Cyclone VARUN (02B) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between group">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-error"></div>
+<div>
+<!-- Header info -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Cyclone VARUN (02B)</h2>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-data-sm text-label-data-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                  HIGH RISK / SEVERE
+                </span>
+</div>
+<p class="font-body-md text-body-md text-secondary font-medium mt-1">Very Severe Cyclonic Storm (VSCS)</p>
+</div>
+<div class="px-space-sm py-1 rounded bg-error-container/40 text-error font-label-data-sm text-label-data-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>Landfall Window: ~28 hrs</span>
+</div>
+</div>
+<!-- Micro-Track Visualizer Banner -->
+<div class="mb-space-md p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">near_me</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface">Vector: Azimuth 335° (NNW)</span>
+</div>
+<!-- Clean inline micro SVG spark track -->
+<div class="flex items-center gap-2">
+<span class="font-caption text-caption text-on-surface-variant">Track Trend:</span>
+<svg class="w-24 h-6 overflow-visible" fill="none" viewbox="0 0 96 24">
+<path d="M4 18 C 30 16, 50 12, 70 8 L 88 4" stroke="#ba1a1a" stroke-dasharray="2 3" stroke-linecap="round" stroke-width="2"></path>
+<path d="M4 18 C 25 17, 45 14, 60 10" stroke="#006398" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="60" cy="10" fill="#ba1a1a" r="3.5"></circle>
+<circle cx="88" cy="4" fill="#76777d" fill-opacity="0.5" r="2.5"></circle>
+</svg>
+</div>
+</div>
+<!-- 4 Core Metrics Cleanly Spaced -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md py-space-sm bg-surface-container-lowest">
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">Current Location</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface block">17.8°N, 88.4°E</span>
+<span class="font-caption text-caption text-on-surface-variant">NW Bay of Bengal</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">Wind Speed</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface block">135 km/h</span>
+<span class="font-caption text-caption text-error font-medium">Gusts 165 km/h</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">Movement</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface block">NNW @ 16 km/h</span>
+<span class="font-caption text-caption text-on-surface-variant">Heading 335°</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">AI Confidence</span>
+<span class="font-label-data-lg text-label-data-lg text-secondary block font-bold">94.2%</span>
+<span class="font-caption text-caption text-on-surface-variant">Ensemble Multi-Run</span>
+</div>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="mt-space-lg pt-space-md flex items-center justify-between bg-surface-container-lowest">
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant">ID: NIO-2026-02B</span>
+<button class="px-space-md py-space-sm rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-data-sm text-label-data-sm flex items-center gap-space-xs transition-all">
+<span>Inspect System</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Deep Depression 01A -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between group">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div>
+<!-- Header info -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Deep Depression 01A</h2>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-data-sm text-label-data-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  MODERATE WATCH
+                </span>
+</div>
+<p class="font-body-md text-body-md text-secondary font-medium mt-1">Deep Depression (DD)</p>
+</div>
+<div class="px-space-sm py-1 rounded bg-secondary-fixed/50 text-secondary font-label-data-sm text-label-data-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">alt_route</span>
+<span>Recurvature Warning</span>
+</div>
+</div>
+<!-- Micro-Track Visualizer Banner -->
+<div class="mb-space-md p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">north</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface">Vector: Azimuth 010° (North)</span>
+</div>
+<!-- Clean inline micro SVG spark track -->
+<div class="flex items-center gap-2">
+<span class="font-caption text-caption text-on-surface-variant">Track Trend:</span>
+<svg class="w-24 h-6 overflow-visible" fill="none" viewbox="0 0 96 24">
+<path d="M4 20 L 40 16 L 70 8 L 88 6" stroke="#5bb8fe" stroke-dasharray="2 3" stroke-linecap="round" stroke-width="2"></path>
+<path d="M4 20 L 40 16" stroke="#006398" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="40" cy="16" fill="#006398" r="3.5"></circle>
+<circle cx="88" cy="6" fill="#76777d" fill-opacity="0.5" r="2.5"></circle>
+</svg>
+</div>
+</div>
+<!-- 4 Core Metrics Cleanly Spaced -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md py-space-sm bg-surface-container-lowest">
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">Current Location</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface block">20.1°N, 68.2°E</span>
+<span class="font-caption text-caption text-on-surface-variant">Off Gujarat Coast</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">Wind Speed</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface block">55 km/h</span>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Gusts 70 km/h</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">Movement</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface block">North @ 12 km/h</span>
+<span class="font-caption text-caption text-on-surface-variant">Heading 010°</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase text-on-surface-variant tracking-wider block mb-1">AI Confidence</span>
+<span class="font-label-data-lg text-label-data-lg text-secondary block font-bold">88.5%</span>
+<span class="font-caption text-caption text-on-surface-variant">Automated Dvorak T2.0</span>
+</div>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="mt-space-lg pt-space-md flex items-center justify-between bg-surface-container-lowest">
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant">ID: NIO-2026-01A</span>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-data-sm text-label-data-sm flex items-center gap-space-xs transition-all">
+<span>Inspect System</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 3. Basin Map & Compact Side Panel Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Basin Map &amp; Selected System Telemetry</h2>
+<p class="font-caption text-caption text-on-surface-variant">Click any active system on the map or cards to inspect vector envelopes and ensemble trajectories.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-medium">INSAT-3DR Multispectral Overlay Active</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Side: Interactive Map Container (approx 68% / 8 of 12 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden relative flex flex-col h-[520px]">
+<!-- Tactical Map Canvas (SVG Schematic Map of Indian Ocean with Coastlines, Cones & Nodes) -->
+<div class="relative w-full h-full bg-surface-container-low overflow-hidden select-none">
+<!-- Map Background Graticule & Subtle Geographic Elements -->
+<svg class="w-full h-full absolute inset-0 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Uncertainty Cone Gradient for VARUN -->
+<radialgradient cx="50%" cy="50%" id="coneGrad" r="60%">
+<stop offset="0%" stop-color="#ba1a1a" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#ba1a1a" stop-opacity="0.02"></stop>
+</radialgradient>
+<pattern height="60" id="grid" patternunits="userSpaceOnUse" width="60">
+<path d="M 60 0 L 0 0 0 60" fill="none" stroke="#d3e4fe" stroke-dasharray="2 4" stroke-width="0.75"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+<!-- Simplified Coastline Schematics (India, Bay of Bengal, Arabian Sea) -->
+<!-- Gujarat / West Coast -->
+<path d="M 120 40 L 160 80 L 140 140 L 170 170 L 190 260 L 230 350 L 270 440 L 310 470" fill="none" stroke="#93ccff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- East Coast / Odisha / Bengal / Bangladesh -->
+<path d="M 310 470 L 340 430 L 380 340 L 440 260 L 510 200 L 580 180 L 640 160 L 690 190" fill="none" stroke="#93ccff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Sri Lanka -->
+<path d="M 320 460 C 330 480, 350 480, 340 450 Z" fill="#d3e4fe" stroke="#93ccff" stroke-width="1.5"></path>
+<!-- Coastal City Markers -->
+<circle cx="170" cy="170" fill="#76777d" r="2.5"></circle>
+<text class="font-label-data-sm text-[10px]" fill="#45464d" x="178" y="174">Mumbai</text>
+<circle cx="510" cy="200" fill="#76777d" r="2.5"></circle>
+<text class="font-label-data-sm text-[10px]" fill="#45464d" x="450" y="204">Puri / Odisha</text>
+<circle cx="580" cy="180" fill="#76777d" r="2.5"></circle>
+<text class="font-label-data-sm text-[10px]" fill="#45464d" x="590" y="184">Kolkata</text>
+<circle cx="380" cy="340" fill="#76777d" r="2.5"></circle>
+<text class="font-label-data-sm text-[10px]" fill="#45464d" x="390" y="344">Chennai</text>
+<!-- ================= CYCLONE VARUN (Bay of Bengal) ================= -->
+<!-- Uncertainty Cone -->
+<polygon fill="url(#coneGrad)" points="540,250 490,170 570,160 540,250"></polygon>
+<path d="M 490 170 Q 530 165 570 160" fill="none" stroke="#ba1a1a" stroke-dasharray="3 3" stroke-width="1"></path>
+<!-- Observed Historical Track -->
+<path d="M 600 370 Q 570 310 540 250" fill="none" stroke="#006398" stroke-linecap="round" stroke-width="3"></path>
+<!-- Historical Nodes -->
+<circle cx="600" cy="370" fill="#006398" r="3"></circle>
+<circle cx="570" cy="310" fill="#006398" r="3.5"></circle>
+<!-- Forecast Dashed Track -->
+<path d="M 540 250 Q 520 200 500 175" fill="none" stroke="#ba1a1a" stroke-dasharray="4 4" stroke-width="2.5"></path>
+<!-- Forecast Intercept Points -->
+<circle cx="520" cy="200" fill="#ba1a1a" fill-opacity="0.8" r="3"></circle>
+<text class="font-label-data-sm text-[9px]" fill="#ba1a1a" x="528" y="203">+18h (140kph)</text>
+<circle cx="500" cy="175" fill="#ba1a1a" r="4"></circle>
+<text class="font-label-data-sm text-[10px] font-semibold" fill="#ba1a1a" x="430" y="165">Landfall Point ~28h</text>
+<!-- Live Eye Node VARUN (540, 250) -->
+<circle class="animate-ping" cx="540" cy="250" fill="#ba1a1a" fill-opacity="0.15" r="18" style="transform-origin: 540px 250px; animation-duration: 2.5s;"></circle>
+<circle cx="540" cy="250" fill="#ba1a1a" fill-opacity="0.25" r="9"></circle>
+<circle cx="540" cy="250" fill="#ba1a1a" r="4.5"></circle>
+<!-- Label Pin VARUN -->
+<rect fill="#ffffff" fill-opacity="0.95" filter="drop-shadow(0 1px 3px rgba(0,0,0,0.1))" height="42" rx="4" width="135" x="555" y="235"></rect>
+<text class="font-label-data-lg text-[12px] font-bold" fill="#0b1c30" x="563" y="252">VARUN (02B)</text>
+<text class="font-label-data-sm text-[10px]" fill="#ba1a1a" x="563" y="267">VSCS • 135 km/h sustained</text>
+<!-- ================= DEEP DEPRESSION 01A (Arabian Sea) ================= -->
+<!-- Track lines -->
+<path d="M 120 250 L 130 200" fill="none" stroke="#006398" stroke-linecap="round" stroke-width="2"></path>
+<path d="M 130 200 L 135 150" fill="none" stroke="#006398" stroke-dasharray="3 3" stroke-width="2"></path>
+<circle cx="120" cy="250" fill="#006398" r="3"></circle>
+<!-- Live Node 01A (130, 200) -->
+<circle class="animate-pulse" cx="130" cy="200" fill="#5bb8fe" fill-opacity="0.25" r="12"></circle>
+<circle cx="130" cy="200" fill="#006398" r="4.5"></circle>
+<!-- Label Pin 01A -->
+<rect fill="#ffffff" fill-opacity="0.95" filter="drop-shadow(0 1px 3px rgba(0,0,0,0.1))" height="38" rx="4" width="115" x="145" y="190"></rect>
+<text class="font-label-data-lg text-[11px] font-semibold" fill="#0b1c30" x="152" y="206">DD 01A</text>
+<text class="font-label-data-sm text-[9px]" fill="#006398" x="152" y="220">55 km/h • N 12 km/h</text>
+</svg>
+<!-- Floating Top-Left GIS Map Controls -->
+<div class="absolute top-space-md left-space-md flex flex-col gap-1 bg-surface-container-lowest/95 backdrop-blur-md p-1 rounded-lg shadow-md">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" title="Zoom In">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" title="Zoom Out">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<div class="h-[1px] bg-surface-container-high mx-1"></div>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" title="Toggle Layer Ensembles">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" title="Recenter Basin">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+</button>
+</div>
+<!-- Floating Top-Right Basin Mode Indicator -->
+<div class="absolute top-space-md right-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-1 rounded-lg shadow-sm flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-medium uppercase">Synoptic Mode: Dual-Track</span>
+</div>
+<!-- Interactive Map Footer Readout Bar -->
+<div class="absolute bottom-0 left-0 right-0 bg-surface-container-lowest/95 backdrop-blur-md px-space-md py-space-xs flex flex-wrap items-center justify-between gap-space-sm shadow-[0_-1px_4px_rgba(0,0,0,0.03)]">
+<!-- Coordinates & Cursor -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-data-sm text-label-data-sm">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span class="font-mono">17.800°N, 88.400°E</span>
+</div>
+<div class="hidden sm:flex items-center gap-1 text-on-surface-variant font-label-data-sm text-label-data-sm">
+<span>Depth: Basin Central</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 font-label-data-sm text-label-data-sm text-on-surface-variant">
+<span class="w-3 h-1 bg-secondary rounded-full"></span>
+<span>Observed</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-data-sm text-label-data-sm text-on-surface-variant">
+<span class="w-3 h-0.5 border-t border-dashed border-error"></span>
+<span>Forecast Track</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-data-sm text-label-data-sm text-on-surface-variant">
+<span class="w-3 h-3 rounded bg-error-container/50 inline-block"></span>
+<span>70% Uncertainty Cone</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Compact Side Panel / 'System Inspection Panel' (~32% / 4 of 12 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between h-[520px]">
+<div>
+<!-- Inspector Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">troubleshoot</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">System Inspector</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-secondary font-label-data-sm text-label-data-sm font-semibold">
+                Selected: VARUN (02B)
+              </span>
+</div>
+<!-- Cyclone Primary Identification -->
+<div class="mb-space-md">
+<h3 class="font-display-hero-mobile text-display-hero-mobile text-on-surface tracking-tight leading-tight">Cyclone VARUN</h3>
+<p class="font-body-md text-body-md text-error font-semibold flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[18px]">cyclone</span>
+<span>Very Severe Cyclonic Storm (VSCS)</span>
+</p>
+</div>
+<!-- Telemetry Parameters Matrix (Compact, High-legibility) -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-lg mb-space-md">
+<div class="flex items-center justify-between py-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Current Position</span>
+<div class="text-right">
+<span class="font-label-data-lg text-label-data-lg text-on-surface block">17.8°N, 88.4°E</span>
+<span class="font-caption text-caption text-on-surface-variant">~240 km SE of Puri Coast</span>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high"></div>
+<div class="flex items-center justify-between py-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Peak Sustained Wind</span>
+<span class="font-label-data-lg text-label-data-lg text-error font-bold">135 km/h (73 kts)</span>
+</div>
+<div class="h-[1px] bg-surface-container-high"></div>
+<div class="flex items-center justify-between py-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Forward Motion</span>
+<span class="font-label-data-lg text-label-data-lg text-on-surface">NNW @ 16 km/h</span>
+</div>
+<div class="h-[1px] bg-surface-container-high"></div>
+<div class="flex items-center justify-between py-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Ensemble Confidence</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-data-lg text-label-data-lg text-secondary font-bold">94.2%</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Mini Impact Summary Callout -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg mb-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">radar</span>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+                  Puri Radar Doppler feed indicates eyewall intensification over past 3 hours. Coastal alerts active for Ganjam, Puri, and Jagatsinghpur.
+                </p>
+</div>
+</div>
+</div>
+<!-- Bottom Action Suite -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<!-- Primary Action: Leads to Cyclone Analysis -->
+<button class="w-full py-space-sm px-space-md rounded-lg bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-data-lg text-label-data-lg flex items-center justify-center gap-space-xs transition-all shadow-sm active:scale-[0.99]">
+<span>Analyze Cyclone</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Secondary Actions -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-space-xs px-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-data-sm text-label-data-sm flex items-center justify-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">satellite_alt</span>
+<span>Doppler Scan</span>
+</button>
+<button class="py-space-xs px-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-data-sm text-label-data-sm flex items-center justify-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">download</span>
+<span>Export Advisory</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. SIH 2026 Problem Statement Validation Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-data-sm text-label-data-sm text-secondary font-semibold uppercase tracking-wider">SIH 2026 Problem Statement #26070 Validation</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-data-sm text-[10px]">OPERATIONAL SPEC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Automated Track Trajectory &amp; Intensity Prediction utilizing real-time INSAT-3DR Geostationary Imagery and Multi-model NWP Ensemble blending.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center shrink-0">
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant">Latency: 142ms</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-medium">Model v4.8.2 Live</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for Refresh Telemetry action
+  const refreshBtn = document.getElementById('refresh-btn');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => {
+      const icon = refreshBtn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.add('animate-spin');
+        setTimeout(() => {
+          icon.classList.remove('animate-spin');
+        }, 800);
+      }
+    });
+  }
+</script></main></div></body></html>
