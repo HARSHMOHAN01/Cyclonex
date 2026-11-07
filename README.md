@@ -4,7 +4,7 @@ CycloneX is an operational meteorological intelligence platform built for active
 
 It provides an end-to-end intelligence pipeline synchronizing with ISRO & IMD data feeds (simulated for development), delivering high-integrity telemetry for North Indian Ocean (NIO) basin threats.
 
-## 🚀 Key Features
+Key Features
 
 * **Real-time Overview Dashboard**: High-priority telemetry, geospatial synoptic track maps, and active threat targets.
 * **Cyclone Analysis Workspace**: In-depth dossier on active systems, cross-sectional atmospheric profiles, multi-model ensemble tracks, and impact exposure modeling.
@@ -13,7 +13,7 @@ It provides an end-to-end intelligence pipeline synchronizing with ISRO & IMD da
 * **Archived Systems (History)**: Historical tracks, peak telemetry, and analysis of past cyclones (FANI, AMPHAN, BIPARJOY, etc.).
 * **Diagnostic Telemetry**: System health monitoring, API stream status, and reliability indices ensuring SIH 2026 Evaluation Validation standards.
 
-## 🛠️ Technology Stack
+Technology Stack
 
 * **Frontend Architecture**:
   * Next.js (React)
@@ -27,7 +27,7 @@ It provides an end-to-end intelligence pipeline synchronizing with ISRO & IMD da
 * **Monorepo Setup**:
   * Managed via npm workspaces (Root `package.json`).
 
-## 📁 Project Structure
+Project Structure
 
 ```
 CycloneX/
@@ -45,7 +45,7 @@ CycloneX/
 └── package.json          # Root Monorepo Workspace Config
 ```
 
-## ⚙️ Local Development Setup
+Local Development Setup
 
 ### 1. Prerequisites
 * Node.js (v18 or higher)
@@ -76,7 +76,7 @@ npm run dev
 * Frontend will run on: [http://localhost:3000](http://localhost:3000)
 * Backend API will run on: [http://localhost:3001](http://localhost:3001)
 
-## 📡 API Endpoints (v1)
+API Endpoints (v1)
 
 The backend provides a set of RESTful endpoints serving real-time and historical cyclone data:
 
@@ -91,10 +91,10 @@ The backend provides a set of RESTful endpoints serving real-time and historical
 
 Design System
 
-CycloneX uses a highly customized Tailwind CSS configuration (`frontend/tailwind.config.ts`) tailored for professional, military-grade meteorological applications. It features:
+CycloneX uses a highly customised Tailwind CSS configuration (`frontend/tailwind.config.ts`) tailored for professional, military-grade meteorological applications. It features:
 
-* **Dark-mode First**: Specialized `surface-container` depth variables.
-* **Status Colors**: Primary (Blue), Secondary (Cyan/Teal), Error (Red), and variations for distinct UI alerts.
+* **Dark-mode First**: Specialised `surface-container` depth variables.
+* **Status Colours **: Primary (Blue), Secondary (Cyan/Teal), Error (Red), and variations for distinct UI alerts.
 * **Typography**: Clean sans-serif hierarchy for data-dense telemetry tables and dashboards.
 
 License
