@@ -89,7 +89,7 @@ The backend provides a set of RESTful endpoints serving real-time and historical
 * `GET /api/v1/telemetry/status` - Backend ingest stream and AI service health events.
 * `GET /api/v1/reports` - Meteorological intelligence and tactical situation reports.
 
-## 🎨 Design System
+Design System
 
 CycloneX uses a highly customized Tailwind CSS configuration (`frontend/tailwind.config.ts`) tailored for professional, military-grade meteorological applications. It features:
 
@@ -97,5 +97,5 @@ CycloneX uses a highly customized Tailwind CSS configuration (`frontend/tailwind
 * **Status Colors**: Primary (Blue), Secondary (Cyan/Teal), Error (Red), and variations for distinct UI alerts.
 * **Typography**: Clean sans-serif hierarchy for data-dense telemetry tables and dashboards.
 
-## 📝 License
+License
 Proprietary / Built for SIH 2026.
